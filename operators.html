@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Operators</title>
+
+    <script>
+        
+     let a = 6
+     let b = 7
+      
+     if ( a=== b) {
+                console.log ("this is true value")
+            }
+            else {
+                console.log ("this is false value")
+            }
+        console.log(typeof(a));
+        console.log(typeof(b));
+
+        document.write(typeof(a), "</br>");
+        document.write(typeof (b), "</br>");
+
+        document.write(a==b , "</br>");
+        document.write(a === b);
+    
+     console.log (a != b); /*It checking only value in variable. If both value equals then it gives true*/ 
+     console.log(a === b); /*it checks value and data type of the variable. If both data type not equal then it gives false.*/
+
+
+
+
+        const game = {
+            ageLimit: 22,
+            totalPlayer: 10,
+            gameName: "Cricket"
+
+        }
+        game.city = "Patiala";
+        game.state = "Punjab";
+        document.write("</br><h2>Extra value in contst:</h2><strong>Age Limit:</strong>" + game.ageLimit + " </br> <strong>Total Player:</strong>" + game.totalPlayer + " </br> <strong>Game Name:</strong>" + game.gameName + "</br> <strong>City:</strong>" + game.city + "</br> <strong>State:</strong>" + game.state);
+// let sportsName = "Cricket" 
+
+if (game.gameName === "Cricket"){
+    console.log("This line is skipped.")
+}
+if (game.gameName === "Footbal"){
+      game.ageLimit = 30
+    game.gameName = "Footbal"
+  }
+   if(game.gameName === "Cricket"){
+        game.ageLimit = 25
+        const name = "xyz"
+    console.log("game", game);
+     console.log("name", name);
+    
+  }
+  if (game.gameName === "Table Tennis") {
+      game.ageLimit = 27
+       console.log("name", name);
+  }
+  
+console.log("game", game);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

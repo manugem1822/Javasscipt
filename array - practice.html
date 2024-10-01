@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>array</title>
+
+    <script>
+  const student1 = {
+    name : "Ram",
+    age : 21,
+    subjects : ["math", "eng", "pun"] 
+  }
+
+  const student2 = {
+      name: "John",
+    age: 22,
+    subjects: ["science", "eco", "hindi"]
+
+  }
+ const klass =[
+    student1, student2
+]
+klass.push(student2)
+  // console.log(klass);
+    // const updatedResult = klass.map((student, index) => {
+    //   student.subjects.push("Drawing");
+    //   // student.hobby = ["Cricket", "Music", "Football"];
+    //   // return student
+      
+    //    return [...student, { 
+     
+    //     hobby: ["Cricket", "Music", "Football"]
+      
+    //   }]
+
+    // })
+    // console.log(updatedResult);
+/*foreach itration*/
+klass.forEach((student, index)=>{
+   student.subjects.push("Drawing");
+  // console.log(index);
+  console.log(student);
+     })
+     /**/
+
+
+
+
+
+
+
+//   console.log(className);
+//  className.name.push("Manu");
+//   console.log(className);
+//   /*Push*/
+// className[1].push(24);
+//     console.log("value push in age", className);
+//     /*pop*/
+//     className[2].pop();
+//     console.log("value pop from rollNo", className)
+
+//     if(className[0].includes("Ram")) {
+//         className[0].unshift("Rohit")
+//         console.log("unshifvalue in Name", className);
+
+//         console.log(className[0])    }
+
+// console.log("find length", className[0].length)
+//             console.log(className[0][0], className[1][0], className[2][0])
+</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Operators</title>
+
+    <script>
+
+        let a = 6
+        let b = 7
+
+        if (a === b) {
+            console.log("this is true value")
+        }
+        else {
+            console.log("this is false value")
+        }
+        console.log(typeof (a));
+        console.log(typeof (b));
+
+        document.write(typeof (a), "</br>");
+        document.write(typeof (b), "</br>");
+
+        document.write(a == b, "</br>");
+        document.write(a === b);
+
+        console.log(a != b); /*It checking only value in variable. If both value equals then it gives true*/
+        console.log(a === b); /*it checks value and data type of the variable. If both data type not equal then it gives false.*/
+
+
+        const game = {
+            ageLimit: 22,
+            totalPlayer: 10,
+            gameName: "Cricket"
+
+        }
+        game.city = "Patiala";
+        game.state = "Punjab";
+        
+        let sportsName = "Table Tennis"
+        
+
+        if (sportsName === "Footbal") {
+            game.ageLimit = 30
+            game.gameName = "Footbal"
+        }
+        else if (sportsName === "Table Tennis") {
+            game.ageLimit  = game.ageLimit - 27
+            game.state ="chandigrah"
+        }
+        console.log(game)
+       
+        
+        document.write("</br><h2>Extra value in contst:</h2><strong>Age Limit:</strong>" + game.ageLimit + " </br> <strong>Total Player:</strong>" + game.totalPlayer + " </br> <strong>Game Name:</strong>" + game.gameName + "</br> <strong>City:</strong>" + game.city + "</br> <strong>State:</strong>" + game.state);
+  /*Example of Greater than and Less than*/  
+   let x = 2;
+   let y = 3;
+   c = x > y;
+   console.log (c);
+
+    let e = 2;
+        let f = 3;
+        g = e < f;
+        console.log(g);
+if (e < f){
+    console.log("E is less than f")
+}else{
+    console.lgo("E is greater than f")
+}
+
+let team = {
+    age: 22,
+    height: "6ft",
+    teamName: "Punjab"
+}
+let newTeam = "China";
+
+if (team.age > 20){
+    team.age = 50,
+    team.height = "9ft"
+  
+}
+  console.log("Data updated successfully", team)
+
+   </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

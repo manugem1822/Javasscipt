@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>array</title>
+
+    <script>
+   let colors = ["Red", "Green", "Blue"]
+        colors.push("yellow"); /*for adding extra value*/
+        colors[1] = "Orange"; /*for value replace*/
+
+   
+   console.log(colors); 
+   colors.pop();/*pop will remove the value of last element of the array.*/
+   console.log(colors);
+   
+   /*Include checks every iteam which exist in a array and then compare value of each element of the array*/
+   if(colors.includes("Red")){
+/*It adds value in index [0]*/
+    colors.unshift("Black");
+    console.log("unshif value",colors);
+   }
+
+let user = {
+    name: "Ram",
+    age: 25,
+    height:"6ft",
+    cars:colors
+
+}
+console.log(user);
+user.cars.pop()
+    console.log(user);
+
+    colors = []
+    console.log(colors);
+</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

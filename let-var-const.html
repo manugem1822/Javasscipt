@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Var Let Const</title>
+
+    <script>
+        /*two different var variable call*/
+        var myFirstName = "Mahesh";
+        myLastName = "Manu";
+        document.write(myFirstName + "</br>", myLastName + "</br>");
+
+        /*In let we can Change the value of the same variable*/
+        var lastName = "Manu";
+        var lastName = "Mahesh"; /*we can */
+        document.write("<h1>" + lastName + "</h1>");
+
+        /*Let Examples*/
+        let myName = "Mahesh";
+        /* let myName = "Manu";we can't decale same name variable*/
+        document.write("<strong>My Name:</strong> " + myName + "</br>");
+        let age = "29";
+        age = "92"; /*We can change the value of same let variable*/
+        document.write("<strong>Age:</strong> ", age);
+
+        /*Const Examples*/
+        const className = "B.com"
+        document.write("</br> Class:", className);
+        let profile = {
+            age: "29",
+            firstName: "Mahesh",
+            lastName: "Bhola"
+
+
+        }
+    
+    let user = 
+    {
+        name: "Manu",
+        email: "maheshbhola94@gmail.com",
+        age: 25
+    }
+    user.class = "BCA"
+    user = profile
+     document.write("</br> Age:" + user.age + "</br>" + "Name:" + user.name + "</br>" + "Email:" + user.email + "</br> Class:" + user.class);
+ console.log(name);
+ let name = "John"
+    console.log(name);
+
+    const game = {
+        ageLimit:22,
+        totalPlayer : 10,
+        gameName : "Cricket" 
+
+    }
+document.write("</br> agelimit:" + game.ageLimit + " </br> Total Player:" + game.totalPlayer + "Game Name:" + game.gameName);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
