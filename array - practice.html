@@ -6,22 +6,41 @@
     <title>array</title>
 
     <script>
+      const studenMarks2 = [{
+        name: "English",
+        marks: 80
+      },
+    {
+          name: "Punjabi",
+          marks: 85
+        }
+    ]
+    const studenMarks1 = [{
+        name: "English",
+        marks: 40
+      },
+      {
+        name: "Punjabi",
+        marks: 45
+      }
+      ]
   const student1 = {
     name : "Ram",
     age : 21,
-    subjects : ["math", "eng", "pun"] 
+    subjects : studenMarks1
+  
   }
 
   const student2 = {
       name: "John",
     age: 22,
-    subjects: ["science", "eco", "hindi"]
+    subjects: studenMarks2
 
   }
  const klass =[
     student1, student2
 ]
-klass.push(student2)
+// klass.push(student2)
   // console.log(klass);
     // const updatedResult = klass.map((student, index) => {
     //   student.subjects.push("Drawing");
@@ -37,17 +56,42 @@ klass.push(student2)
     // })
     // console.log(updatedResult);
 /*foreach itration*/
-klass.forEach((student, index)=>{
-   student.subjects.push("Drawing");
-  // console.log(index);
-  console.log(student);
-     })
+// klass.forEach((student, index)=>{
+//    student.subjects.push("Drawing");
+//   // console.log(index);
+//   console.log(student);
+//      })
      /*ffffdfd*/
 
 
-
-
-
+// klass.forEach((student, index)=>{
+//   if(student.name === "Ram"   ){
+//     console.log(student)
+// }
+//   else{
+//     console.log("value not found");
+// }
+// });
+    // for (const student of klass) {
+    //   if(student.subjects&&student.subjects.length) {
+    
+    // console.log(`outer loop`, student)
+    //   for (const subject of student.subjects) {
+    //      console.log("inner loop", subject)
+    //   }
+    //  }
+    // }
+  let i = 0
+  for (const student of klass) {
+    i++
+    if (student.subjects || student.subjects.length) {
+        
+      console.log(`outer loop`, student, i)
+      for (const subject of student.subjects) {
+        console.log("inner loop", subject)
+      }
+    }
+  }
 //   console.log(className);
 //  className.name.push("Manu");
 //   console.log(className);

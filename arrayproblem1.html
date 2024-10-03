@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>array</title>
+
+    <script>
+     
+    const studenMarks1 = [{
+        name: "English",
+        marks: 40
+      },
+      {
+        name: "Punjabi",
+        marks: 45
+      }
+      ]
+       const studenMarks2 = [{
+          name: "English",
+          marks: 80
+        },
+        {
+          name: "Punjabi",
+          marks: 85
+        }
+        ]
+        const studenMarks3 = [{
+            name: "English",
+            marks: 32
+          },
+          {
+            name: "Punjabi",
+            marks: 30
+          }
+          ]
+  const student1 = {
+    name : "Ram",
+    age : 21,
+    subjects : studenMarks1
+  
+  }
+
+  const student2 = {
+      name: "John",
+    age: 22,
+    subjects: studenMarks2
+
+  }
+  const student3 = {
+      name: "Sham",
+      age: 23,
+      subjects: studenMarks3
+
+    }
+ const klass =[
+    student1, student2, student3
+]
+
+ 
+
+  for (const student of klass){
+    for (const subject of student.subjects) {
+
+   if (subject.marks > 50) {
+        console.log("First division", subject)
+      }
+    if (subject.marks < 35) {
+        console.log("fail", subject)
+      }
+      if (subject.marks < 50 && subject.marks > 35 ){
+        console.log("second division", subject)
+      }if (subject.marks = 50)
+      {
+          console.log("Pass", subject)
+      }
+    }
+     }
+
+   // for (const student of klass) {
+    //   if (student.subjects && student.subjects.length) {
+
+    //     console.log(`outer loop`, student)
+    //     for (const subject of student.subjects) {
+    //       console.log("inner loop", subject)
+    //     }
+    //   }
+    // }
+    </script>
+  
+</head>
+
+<body>
+
+</body>
+
+</html>
