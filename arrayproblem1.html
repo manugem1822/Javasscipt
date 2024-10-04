@@ -63,17 +63,17 @@
     for (const subject of student.subjects) {
 
    if (subject.marks > 50) {
-        console.log("First division", subject)
+        console.log("First division", subject, student.name)
       }
     if (subject.marks < 35) {
         console.log("fail", subject)
       }
       if (subject.marks < 50 && subject.marks > 35 ){
-        console.log("second division", subject)
-      }if (subject.marks = 50)
-      {
-          console.log("Pass", subject)
-      }
+        console.log("second division", subject, student.name)
+     }if (subject.marks == 40)
+       {
+           console.log("Pass", subject)
+       }
     }
      }
 

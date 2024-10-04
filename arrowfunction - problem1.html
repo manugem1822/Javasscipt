@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>arrowfunction</title>
+
+    <script>
+// const a = 10;
+// const b = 20;
+//  const sum = (a,b)=>{
+// let total = a+b
+// return total;
+//  }
+
+
+//      const sayHello = (person)=>{
+//       console.log("hello" + person);
+ 
+ 
+//       console.log(sum(5, 5));
+
+//      }
+// sayHello("Harpreet");
+
+   /*Create array of 5 frieds and print each name with loop*/
+   let friendsName = ["Ram", "Tom", "Rohit", "Sahil", "sumit"]
+
+//    friendsName.forEach((names, index) => {
+//     console.log(index, names);
+    
+//     });
+    
+
+    const showMyFriendsName = (friends) => {
+            friends.forEach(name => {
+                console.log(name);
+            });
+        };
+
+        // Call the function to see the output
+        showMyFriendsName(friendsName);
+
+  
+
+    /*Add new friend name in previous array friendsName*/
+    
+    friendsName.push("Mohan");
+    console.log("added adtional friend", friendsName);
+    
+    friendsName.forEach((addionalname, index)=>{
+        console.log(index, addionalname);
+    })
+
+    /*check if ram exist then add new friend sham else remove any friends */
+    console.log("updated list below")
+    // friendsName.forEach((updatelist, index)=>{
+        if(friendsName.includes('Ram' )){
+            friendsName.push("Sham")
+
+        }else{
+            friendsName.pop()
+        }
+        
+        console.log(friendsName);
+ 
+   </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
