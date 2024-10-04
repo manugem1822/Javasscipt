@@ -6,31 +6,9 @@
     <title>arrowfunction</title>
 
     <script>
-// const a = 10;
-// const b = 20;
-//  const sum = (a,b)=>{
-// let total = a+b
-// return total;
-//  }
-
-
-//      const sayHello = (person)=>{
-//       console.log("hello" + person);
- 
- 
-//       console.log(sum(5, 5));
-
-//      }
-// sayHello("Harpreet");
 
    /*Create array of 5 frieds and print each name with loop*/
    let friendsName = ["Ram", "Tom", "Rohit", "Sahil", "sumit"]
-
-//    friendsName.forEach((names, index) => {
-//     console.log(index, names);
-    
-//     });
-    
 
     const showMyFriendsName = (friends) => {
             friends.forEach(name => {
@@ -44,25 +22,30 @@
   
 
     /*Add new friend name in previous array friendsName*/
-    
-    friendsName.push("Mohan");
-    console.log("added adtional friend", friendsName);
-    
-    friendsName.forEach((addionalname, index)=>{
-        console.log(index, addionalname);
+const addFriend = (newfriend) =>{
+    friendsName.push('sham')
+    console.log("new frined", newfriend);
+    newfriend.forEach((listupdated, index)=>{
+        console.log(index, listupdated)
     })
+}  
+    addFriend(friendsName);
 
-    /*check if ram exist then add new friend sham else remove any friends */
     console.log("updated list below")
-    // friendsName.forEach((updatelist, index)=>{
-        if(friendsName.includes('Ram' )){
-            friendsName.push("Sham")
 
-        }else{
+    const checkmyfriend =(finallist) =>{
+         if(friendsName.includes("Ram")){
+            friendsName.push("Lalit")
+            console.log(finallist);
+         }else{
             friendsName.pop()
-        }
-        
-        console.log(friendsName);
+            console.log(finallist)
+         }
+    }
+    checkmyfriend(friendsName);
+
+     /*check if ram exist then add new friend sham else remove any friends */
+      
  
    </script>
 </head>
