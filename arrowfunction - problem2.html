@@ -46,7 +46,50 @@ const addFriend = (newfriend) =>{
 
      /*check if ram exist then add new friend sham else remove any friends */
       
- 
+ const profileName = {
+     name: "Ram",
+     age: 22,
+     hobyy: "baskitball",
+     email: "maheshbhola94@gmail.com"
+ }
+
+//  const addLastName = (lastname) => {
+//     profileName.lastname = lastname
+//     console.log(profileName) 
+// }
+
+  const namechange = (updatename) => {
+        profileName.name = updatename
+        return profileName.name;
+    }
+    console.log(namechange("Mohit"));
+
+
+    // const addLastName = (lastname) => {
+    //     user.lastname = lastname
+    //     return profileName.lastname;
+    // }
+    //     console.log(addLastName("Sharma"))
+   
+         
+          
+
+
+
+
+    // const namechange = (updatename) => {
+    //     profileName.name = updatename
+    // console.log (profileName)
+    // }
+    // namechange("Mohit");
+    // // const showMyFriendsName = (friends) => {
+    //     friends.forEach(name => {
+    //         console.log(name);
+    //     });
+    // };
+
+    // Call the function to see the output
+    showMyFriendsName(friendsName);
    </script>
 </head>
 

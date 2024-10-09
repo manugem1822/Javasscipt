@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="utf-8">
+        <title>arrowfunction</title>
+
+        <script>
+   const profileName = {
+    name:"Honey",
+    age:22,
+    email: "honey94@gmail.com",
+    hobby : []
+}
+
+    // const namechange = (updatename) => {
+    //     profileName.name = updatename
+    //     return profileName.name;
+    // }
+    // console.log(namechange("Mohit"));
+    // console.log(profileName);
+
+
+ const updateprofile =(name, hobby, age, email, ) =>{
+    name && profileName.name = name;
+    if(age)  profileName.age = age;
+    if(email)  profileName.email = email;
+    if(hobby) profileName.hobby = [...profileName.hobby,hobby];
+     
+    return profileName;
+ }
+ console.log(updateprofile("Manu",'football'));
+ console.log(updateprofile("Manu",'cricket',55));
+ console.log(profileName);
+
+   </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>
