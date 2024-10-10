@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="utf-8">
+        <title>arrowfunction</title>
+
+        <script>
+   const profileName = {
+        name: "Honey",
+        age: 22,
+        email: "honey94@gmail.com",
+        hobby: []
+    }
+    const updateProfile = (name, hobby,age, email) => {
+        if (name) profileName.name = name;
+        if (age) profileName.age = age;
+        if (profileName.hobby.length){
+         profileName.hobby.forEach(el => {
+        if (el != hobby) profileName.hobby.push(hobby)
+                else {
+                    console.log("value already exist.");
+                }
+            })
+        }else {
+            profileName.hobby.push(hobby);
+        }
+        return profileName;
+    }
+
+  console.log(updateProfile("Manu","Table Tennis", 52));
+  console.log(updateProfile("Manu", "Table Tennis", 52));
+   console.log(updateProfile("Manu", "Cricket", 52));
+
+   </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>

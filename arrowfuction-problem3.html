@@ -21,16 +21,34 @@
     // console.log(profileName);
 
 
- const updateprofile =(name, hobby, age, email, ) =>{
-    name && profileName.name = name;
+ const updateprofile =(obj ) =>{
+    const { name, age, email, hobby } = obj
+    if(name) profileName.name = name;
     if(age)  profileName.age = age;
     if(email)  profileName.email = email;
-    if(hobby) profileName.hobby = [...profileName.hobby,hobby];
-     
-    return profileName;
+    let count = 0;
+    if(hobby) {
+        profileName.hobby.forEach((el)=>{
+            if(el===hobby){
+                count = count +1
+            }
+           
+    })
+    if(count===0) profileName.hobby = hobby;
+    else console.log("already exist.",hobby)
+    }
+    return profileName
+
  }
- console.log(updateprofile("Manu",'football'));
- console.log(updateprofile("Manu",'cricket',55));
+ const obj = {
+    name: "hello",
+    hobby: "football"
+
+ }
+  console.log(updateprofile(obj));
+    console.log(updateprofile(obj.hobby = "cricket"));
+     console.log(updateprofile(obj));
+      console.log(updateprofile(obj));
  console.log(profileName);
 
    </script>
